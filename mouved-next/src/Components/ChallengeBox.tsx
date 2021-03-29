@@ -1,10 +1,11 @@
 import { useContext } from 'react'
 import { ChallengeContext } from '../contexts/ChallengeContext'
 import styles from '../styles/components/ChallengeBox.module.css'
+import { ComplitedChallenges } from './ComplitedChallenges';
 
 export function ChallengeBox(){
 
-    const {activeChallenge,resetChallenge} = useContext(ChallengeContext);
+    const {activeChallenge,resetChallenge,completeChallenge} = useContext(ChallengeContext);
 
     return(
 
@@ -31,7 +32,9 @@ export function ChallengeBox(){
                             </button>
                         <button
                             className={styles.ChallengeSuccededButton} 
-                            type='button'>
+                            type='button'
+                            onClick = {ComplitedChallenges}
+                            >
                             Completei
                         </button>
                         </footer>
