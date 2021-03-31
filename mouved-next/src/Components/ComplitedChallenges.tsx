@@ -4,7 +4,7 @@ import style from '../styles/components/ComplitedChallenges.module.css'
 
 
 export function ComplitedChallenges(){
-const{challengesCompleted} = useContext(ChallengeContext)
+const{challengesCompleted} = useContext(ChallengeContext);
 
 return(
     <div className={style.ComplitedChallengesConteiner}>
