@@ -4,9 +4,7 @@ import React from 'react'
 
 function MyApp({ Component, pageProps }) {
   return( 
-          <ChallengeContextProvider> 
             <Component {...pageProps} />
-         </ChallengeContextProvider>
          )
 }
 
